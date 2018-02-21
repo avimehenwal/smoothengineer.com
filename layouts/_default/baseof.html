@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html lang="{{ with $.Site.LanguageCode }}{{ . }}{{ else }}en-us{{ end }}">
+ {{ block "head" . }} {{partial "head.html" . }} {{end}}
+  <body>
+    {{ partial "menu.html" . }}
+    {{ block "main" .   }} {{ end }}
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!-- Head and SEO infromation -->
+<head>
+  <title> {{ .Site.Title}} </title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="no-referrer">
+  <meta name="author" content="{{.Site.Params.author}}">
+  {{ .Hugo.Generator }}  <!-- <meta name="generator" content="Hugo 0.18" /> -->
+  <base href="{{ .Site.BaseURL }}">
+
+  {{ if .Site.Params.description }}
+    <meta name="keywords"    content="{{.Site.Params.description}}">
+    <meta name="description" content="{{.Site.Params.description}}">
+  {{ end }}
+
+  <!--w3.css framework-->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <!--w3.css color theme  -->
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2017.css">
+
+  <!--Google Fonts  -->
+  <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+
+  <!--Google Material Design https://google.github.io/material-design-icons/-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Google Analytics -->
+  {{ template "_internal/google_analytics_async.html" . }}
+
+  <!--Fevicon  -->
+  <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' />
+
+</head>
