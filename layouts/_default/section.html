@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+  <ul class="w3-ul">
+  {{range sort .Data.Pages}}
+    <li>
+      <a href="{{.RelPermalink}}">
+        {{.Title}}
+      </a>
+    </li>
+  {{end}}
+  </ul>
+
+{{ end }}

@@ -3,6 +3,8 @@
  {{ block "head" . }} {{partial "head.html" . }} {{end}}
   <body>
     {{ partial "menu.html" . }}
-    {{ block "main" .   }} {{ end }}
+    <div style="font-family:'Roboto Slab',serif;">
+      {{ block "main" .   }} {{ end }}
+    </div>
   </body>
 </html>

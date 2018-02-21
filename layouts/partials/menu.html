@@ -1,4 +1,34 @@
-<div class="w3-container w3-jumbo w3-2017-marina">
-  <i class="material-icons orange600 w3-jumbo">face</i>
-  <span>What do you mean?</span>
+<!--Top fixed menu  -->
+<!--style="font-family: 'Tangerine"-->
+
+<!--Workaround to slove overlapping with w3-top element-->
+<div class="w3-bar w3-2017-marina">
+    <h1 class="w3-bar-item">
+      <b class="w3-text-orange w3-xxxlarge">{</b>
+        <a class=" w3-hover-opacity" href="/" style="text-decoration:none">
+          {{.Site.Params.Logo | safeHTML}}
+        </a>
+      <b class="w3-text-orange w3-xxxlarge">}</b>
+    </h1>
 </div>
+
+<div class="w3-bar w3-2017-marina w3-top">
+    <h1 class="w3-bar-item">
+      <b class="w3-text-orange w3-xxxlarge">{</b>
+        <a class=" w3-hover-opacity" href="/" style="text-decoration:none">
+          {{.Site.Params.Logo | safeHTML}}
+        </a>
+      <b class="w3-text-orange w3-xxxlarge">}</b>
+    </h1>
+
+    {{range sort .Site.Sections "Title" "desc"}}
+      <div class="w3-bar-item">
+        <a href="{{.RelPermalink}}" style="text-decoration:none">
+          <h3 class="w3-hover-text-orange">
+            {{.Title}}
+          </h3>
+        </a>
+      </div>
+    {{end}}
+
+</div> <!--w3-bar-->
