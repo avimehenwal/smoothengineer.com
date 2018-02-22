@@ -2,7 +2,7 @@ baseURL           = "http://smoothengineer.com/"
 languageCode      = "en-us"
 title             = "Smooth Engineer"
 disqusShortname   = ""
-googleAnalytics   = ""
+googleAnalytics   = "UA-113741959-3"
 
 # GLOBALS
 [params]

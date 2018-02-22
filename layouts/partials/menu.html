@@ -21,14 +21,14 @@
       <b class="w3-text-orange w3-xxxlarge">}</b>
     </h1>
 
-    {{range sort .Site.Sections "Title" "desc"}}
-      <div class="w3-bar-item">
-        <a href="{{.RelPermalink}}" style="text-decoration:none">
-          <h3 class="w3-hover-text-orange">
-            {{.Title}}
-          </h3>
-        </a>
-      </div>
-    {{end}}
+  {{range sort .Site.Sections "Title" "desc"}}
+    <div class="w3-bar-item">
+      <a href="{{.RelPermalink}}" style="text-decoration:none">
+        <h3 class="w3-hover-text-orange">
+          {{.Title}}
+        </h3>
+      </a>
+    </div>
+  {{end}}
 
 </div> <!--w3-bar-->
