@@ -14,6 +14,3 @@ Apart from making data visually presentable it helps achieve the following
 - Performing admin operation on database
 - Save SQL queries with `.sql` extension files and retrieve them later quickly for execution
 - Can work simuntaneounly on  multiple databases in seperate tabs. Both **local** and **remote**  
-
-### How do we install it?
-Here is a shared terminal session to demostrate Installation

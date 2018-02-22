@@ -1,13 +1,24 @@
 {{ define "main" }}
 
-  <ul class="w3-ul">
-  {{range sort .Data.Pages}}
-    <li>
-      <a href="{{.RelPermalink}}">
-        {{.Title}}
-      </a>
-    </li>
-  {{end}}
-  </ul>
+<div class="">
+
+  <header class="w3-container w3-2017-primrose-yellow">
+    <i class="material-icons orange600 w3-jumbo">equalizer</i>
+    <span class="w3-xxlarge">{{.Section | upper}}</span>
+  </header>
+
+  <section class="w3-container w3-2017-greenery">
+    <ul class="w3-ul">
+    {{range sort .Data.Pages}}
+      <li class="w3-xlarge w3-hover-orange">
+        <a href="{{.RelPermalink}}" style="text-decoration:none">
+          <i class="material-icons">more</i>  {{.Title}}
+        </a>
+      </li>
+    {{end}}
+    </ul>
+  </section>
+
+</div>
 
 {{ end }}
