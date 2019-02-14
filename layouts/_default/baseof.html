@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{ with $.Site.LanguageCode }}{{ . }}{{ else }}en-us{{ end }}">
  {{ block "head" . }} {{partial "head.html" . }} {{end}}
-  <body style="font-family:'Roboto Slab',serif;">
+  <body style="font-family:'Roboto Slab',serif;" onload="loadgitment()">
     {{ partial "menu.html" . }}
     <div>
       {{ block "main" .   }} {{ end }}
     </div>
+
+    {{ if isset .Site.Params "gitment" }}
+      {{ partial "gitment.html" . }}
+      <noscript>JavaScript is required for comments to show.</noscript>
+    {{ end }}
+
   </body>
 </html>

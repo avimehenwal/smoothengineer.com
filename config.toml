@@ -8,3 +8,13 @@ googleAnalytics   = "UA-113741959-3"
 [params]
     logo        = "&sect;&Mu;&Phi;&thetasym;&Tau;&Eta; &sum;&eta;g&iexcl;&Pi;&Xi;&Epsilon;&Gamma;"
     description = "visuallydefine by avimehenwal"         # Max 160 characters show in search
+
+# v This __REQUIRES__ JavaScript. Comment the ENTIRE BLOCK if you don't like it.
+[params.gitment] # https://github.com/imsun/gitment#get-started
+	id = "smoothengineer" # a second tag, REQUIRED
+	owner = "avimehenwal" # github username
+	repo = "smoothengineer.com" # repo to make issues on, should be public
+
+[params.gitment.oauth] # https://github.com/settings/applications/new
+	id = "1586359dad90cc86c1af" # your oauth ID
+	secret = "9b56473147c69e83063fc4ffc3017bbce6d0398a" # your oauth secret

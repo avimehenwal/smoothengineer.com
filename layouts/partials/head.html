@@ -35,4 +35,9 @@
   <!--Fevicon  -->
   <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
 
+  {{ if isset .Site.Params "gitment" }}
+			{{ partial "gitment_head.html" . }}
+			{{ partial "gitment_css.html" . }}
+	{{ end }}
+
 </head>
