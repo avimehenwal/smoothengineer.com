@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ with $.Site.LanguageCode }}{{ . }}{{ else }}en-us{{ end }}">
- {{ block "head" . }} {{partial "head.html" . }} {{end}}
+<!--head, seo and external js/css resources link -->
+ {{ block "head" . }}
+   {{partial "head.html" . }}
+ {{end}}
   <body style="font-family:'Roboto Slab',serif;" onload="loadgitment()">
     {{ partial "menu.html" . }}
     <div>

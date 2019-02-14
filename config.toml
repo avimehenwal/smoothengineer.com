@@ -1,4 +1,4 @@
-baseURL           = "http://smoothengineer.com/"
+baseURL           = "https://smoothengineer.com/"
 languageCode      = "en-us"
 title             = "Smooth Engineer"
 disqusShortname   = ""
@@ -8,6 +8,11 @@ googleAnalytics   = "UA-113741959-3"
 [params]
     logo        = "&sect;&Mu;&Phi;&thetasym;&Tau;&Eta; &sum;&eta;g&iexcl;&Pi;&Xi;&Epsilon;&Gamma;"
     description = "visuallydefine by avimehenwal"         # Max 160 characters show in search
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
 
 # v This __REQUIRES__ JavaScript. Comment the ENTIRE BLOCK if you don't like it.
 [params.gitment] # https://github.com/imsun/gitment#get-started

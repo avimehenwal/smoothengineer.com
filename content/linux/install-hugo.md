@@ -2,6 +2,10 @@
 title: How to install HUGO on Ubuntu Linux 16.04
 date: 2018-02-22T17:52:52+05:30
 video: 161061
+categories  : ["Development"]
+series      : ["Go Web Dev"]
+tags        : ["Go Web Dev", "Development"]
+
 ---
 
 ### {{< icon "computer" >}} What is HUGO {{< icon "priority_high" >}}

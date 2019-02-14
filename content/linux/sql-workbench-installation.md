@@ -2,6 +2,10 @@
 title: How to install SQL Workbench on Ubuntu Linux 16.04
 date: 2018-02-21T21:19:57+05:30
 video: 163656
+categories  : ["Development"]
+series      : ["Go Web Dev"]
+tags        : ["Go Web Dev", "Development"]
+
 ---
 
 ### {{< icon "computer" >}} What is SQL Workbench
